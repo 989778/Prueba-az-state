@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Az State Remodeling llc</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>AZ STATE<span> REMODELING LLC</span></h1>
+        <p>Transforming spaces, creating homes</p>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Main</a></li>
+          <li><a href="#servicios" class="nav-link">Services</a></li>
+          <li><a href="#proyectos" class="nav-link">Projects</a></li>
+          <li><a href="#nosotros" class="nav-link">Us</a></li>
+          <li><a href="#contacto" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Remodels that inspire</h2>
+      <p>We transform your spaces with innovative design and exceptional quality</p>
+      <a href="#contacto" class="btn btn-primary btn-float">Request a quote</a>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2 class="section-title">Our <span>Services</span></h2>
+
+      <div class="services-grid">
+
+        <!-- Construcción y Acabados -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+          <h3>Construction and Finishes</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="concreto">Tale</a>
+            </li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="estuco">Wood work</a>
+            </li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="tablaroca">Raise
+                Paver</a></li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link"
+                data-service="adoquines">Framing</a></li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="pisos">Pérgolas
+                synthetic grass pavers</a></li>
+          </ul>
+
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+          <h3>Interior Finishes</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="pintura">flooring</a>
+            </li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link"
+                data-service="zoclos">Insulation</a></li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="molduras">Pérgolas
+                synthetic grass pavers</a></li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="gabinetes">Custom
+                Cabinets</a></li>
+          </ul>
+
+        </div>
+        <!-- Baños -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-shower"></i></div>
+          <h3>Bathrooms</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="regaderas">bathroom
+                shower</a></li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="puertas">Glass Doors
+                for Showers</a></li>
+          </ul>
+
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-th-large"></i></div>
+          <h3>Installations and Coatings</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="azulejos">Tiles</a>
+            </li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="granito">Granite</a>
+            </li>
+            <li><i class="fas fa-check-circle"></i> <a href="#" class="service-link" data-service="alfombra">Carpet
+                Installation</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="estuco">Wood work</button>
+        <button class="filter-btn" data-filter="tablaroca">Raise Paver</button>
+        <button class="filter-btn" data-filter="adoquines">Framing</button>
+        <button class="filter-btn" data-filter="pisos">Pérgolas synthetic grass pavers</button>
+        <button class="filter-btn" data-filter="pintura">flooring</button>
+        <button class="filter-btn" data-filter="zoclos">Insulation </button>
+        <button class="filter-btn" data-filter="regaderas">bathroom shower</button>
+        <button class="filter-btn" data-filter="granito">Granite</button>
+
+      </div>
+
+
+      <div class="projects-grid" id="projectsContainer">
+        <div class="project-carousel granito">
+          <div class="project-category-label">Concrete</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Kitchen with concrete</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Pave1.jpg" alt="Pave">
+              <img src="img/Pave2.jpg" alt="Pave">
+              <img src="img/Pave3.jpg" alt="Pave">
+              <img src="img/Pave4.jpg" alt="Pave">
+              <img src="img/Pave5.jpg" alt="Pave">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Proyecto: Regadera Moderna -->
+        <div class="project-carousel regaderas">
+          <div class="project-category-label">Modern Shower</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Modern Shower</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Regadera1.jpg" alt="Regadera 1">
+              <img src="img/Regadera2.jpg" alt="Regadera 2">
+              <img src="img/Regadera3.jpg" alt="Regadera 1">
+              <img src="img/Regadera4.jpg" alt="Regadera 1">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Concreto Pulido -->
+        <div class="project-carousel concreto">
+          <div class="project-category-label">Tale</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Tale/h3>
+            <div class="carousel-wrapper">
+              <div class="carousel-track">
+                <img src="img/Tale1.jpg" alt="Tale">
+                <img src="img/Tale2.jpg" alt="Tale">
+                <img src="img/tale3.jpg" alt="Tale">
+                <img src="img/tale4.jpg" alt="Tale">
+                <img src="img/tale5.jpg" alt="Tale">
+              </div>
+            </div>
+        </div>
+
+        <!-- Proyecto: Estuco Exterior -->
+        <div class="project-carousel estuco">
+          <div class="project-category-label">Wood work</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Wood work</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/wood1.jpg" alt="Wood work 1">
+              <img src="img/wood2.jpg" alt="Wood work 2">
+              <img src="img/wood3.jpg" alt="Wood work 3">
+              <img src="img/wood4.jpg" alt="Wood work 4">
+              <img src="img/wood5.jpg" alt="Wood work 5">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Tablaroca Interior -->
+        <div class="project-carousel tablaroca">
+          <div class="project-category-label">Raise Paver</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">PAVEL</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Pavel1.jpg" alt="Raise Paver">
+              <img src="img/Pavel2.jpg" alt="Raise Paver">
+              <img src="img/Pavel5.jpg" alt="Raise Paver">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Adoquines para Patio -->
+        <div class="project-carousel adoquines">
+          <div class="project-category-label">Framing</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Framing</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Framing1.jpg" alt="Framing 1">
+              <img src="img/Framing2.jpg" alt="Framing 2">
+              <img src="img/Framing3.jpg" alt="Framing 3">
+              <img src="img/Framing4.jpg" alt="Framing 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Instalación de Pisos -->
+        <div class="project-carousel pisos">
+          <div class="project-category-label">Pérgolas synthetic grass pavers</div>
+          <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Pérgolas synthetic grass pavers</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Pergola1.jpg" alt="Pergola 1">
+              <img src="img/Pergola2.jpg" alt="Pérgola2">
+              <img src="img/Pergola3.jpg" alt="Pergola 3">
+              <img src="img/Pergola4.jpg" alt="Pergola 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Pintura Interior -->
+        <div class="project-carousel pintura">
+          <div class="project-category-label">flooring</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">flooring</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/flooring1.jpg" alt="flooring 1">
+              <img src="img/flooring2.jpg" alt="flooring 2">
+              <img src="img/flooring3.jpg" alt="flooring 3">
+              <img src="img/flooring4.jpg" alt="flooring 4">
+              <img src="img/flooring5.jpg" alt="flooring 5">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto: Zoclos -->
+        <div class="project-carousel zoclos">
+          <div class="project-category-label">Insulation</div> <!-- 👈 Esta es la etiqueta nueva -->
+          <h3 class="project-title">Insulation</h3>
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <img src="img/Insulation1.jpg" alt="Insulation">
+              <img src="img/Insulation2.jpg" alt="Insulation">
+              <img src="img/Insulation3.jpg" alt="Insulation">
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="nosotros" class="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">About <span>Us</span></h2>
+        <p>At AZ State Remodeling LLC, we are dedicated to transforming ordinary spaces into extraordinary places. With
+          years of experience in interior and exterior remodeling, we are committed to delivering quality, style, and
+          functionality in every project we undertake.</p>
+
+        <p>From modern kitchens and elegant bathrooms to custom finishes and durable flooring, our team specializes in
+          bringing your ideas to life with attention to detail, premium materials, and exceptional service.</p>
+
+        <p>We pride ourselves on building strong relationships with our clients, based on trust, professionalism, and
+          results. Every home tells a story, and our mission is to help you write yours with spaces that reflect your
+          personality and lifestyle.</p>
+
+        <div class="stats">
+          <div class="stat-item">
+
+
+          </div>
+          <div class="stat-item">
+
+
+          </div>
+          <div class="stat-item">
+
+
+          </div>
+        </div>
+      </div>
+
+      </video>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">Cont<span>act</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact information</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Av. Main 1234, City</p>
+          <p><i class="fas fa-phone"></i> +1 602 741 6927</p>
+          <p><i class="fas fa-envelope"></i> azstate@ejem.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/2230589@upt.edu.mx" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="telefono" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" placeholder="Tell us about your project" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>AZ STATE<span>REMODELING LLC</span></h3>
+          <p></p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#inicio">Main</a></li>
+            <li><a href="#servicios">Services</a></li>
+            <li><a href="#proyectos">Proyects</a></li>
+            <li><a href="#nosotros">Us</a></li>
+            <li><a href="#contacto">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#">Comprehensive Remodeling</a></li>
+            <li><a href="#">Custom Kitchens</a></li>
+            <li><a href="#">Modern Bathrooms</a></li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">Interior Design</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AZ State Remodeling. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/1234567890" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const cards = document.querySelectorAll('.project-card');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentIndex = 0;
+    const delay = 2000;
+
+    function showSlide(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      showSlide(currentIndex);
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Auto-slide cada 4 segundos
+    setInterval(nextSlide, delay);
+  </script>
+
+</body>
+
+</html>
